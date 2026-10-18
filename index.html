@@ -3,18 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Layout</title>
+    <title>Tạo bố cục responsive bằng CSS Flexbox</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <header class="header">Header</header>
-        <nav class="nav">Navigation</nav>
+        <header class="header">
+            <h1>Header - Tiêu đề trang</h1>
+        </header>
+
+        <nav class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Dịch vụ</a>
+            <a href="#">Tin tức</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+
         <div class="main-container">
-            <main class="content">Main Content</main>
-            <aside class="sidebar">Sidebar</aside>
+            <main class="content">
+                <h2>Khu vực Main Content</h2>
+                <p>
+                    Đây là khu vực hiển thị nội dung chính của website. Bố cục này được xây dựng hoàn toàn bằng CSS Flexbox, giúp linh hoạt co giãn theo kích thước của màn hình thiết bị.
+                </p>
+                <br>
+                <p>
+                    Trên màn hình Desktop, khu vực nội dung chính chiếm tỷ lệ lớn (flex: 3), nằm song song với thanh Sidebar (flex: 1). Khi chuyển sang màn hình di động hoặc tablet (dưới 768px), các khối sẽ tự động chuyển sang xếp chồng theo chiều dọc (flex-direction: column).
+                </p>
+            </main>
+
+            <aside class="sidebar">
+                <h3>Sidebar</h3>
+                <p>Khu vực chứa nội dung phụ:</p>
+                <ul style="margin-top: 10px; padding-left: 20px;">
+                    <li>Tin tức mới nhất</li>
+                    <li>Bài viết nổi bật</li>
+                    <li>Quảng cáo & Đối tác</li>
+                    <li>Liên kết mạng xã hội</li>
+                </ul>
+            </aside>
         </div>
-        <footer class="footer">Footer</footer>
+
+        <footer class="footer">
+            <p>Footer - Bản quyền &copy; 2026. Xây dựng bởi CSS Flexbox.</p>
+        </footer>
     </div>
 </body>
 </html>
